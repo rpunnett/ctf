@@ -2,8 +2,7 @@
 
 import urllib2
 import hashlib
-#46.10.14.206:1080
-#213.231.161.111:10045
+
 proxy_type = "http"
 proxy_ip = "190.198.144.127"
 proxy_port = "8080"
@@ -29,7 +28,6 @@ except urllib2.HTTPError:
 else:
     print "Connected to JS CDN"
 
-
 m = hashlib.md5()
 m.update(html)
 
@@ -37,10 +35,5 @@ if m.hexdigest() == md5Verification:
    print "JS is Secure"
 else:
    print "Tampering Found"
-
-
-
-
-#print html
 
 # end of proxyTest.py
