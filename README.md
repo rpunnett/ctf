@@ -9,7 +9,9 @@ Usage
 Call the script with the requested arguments:
 
 t = Protocol: http or https
+
 i = IP or Hostname
+
 p = Port
 
 
